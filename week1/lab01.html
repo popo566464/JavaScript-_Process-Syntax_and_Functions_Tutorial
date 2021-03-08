@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Week06 - Practice 01</title>               
+    </head>    
+    <body>
+   <script>
+    var res = window.prompt("請輸入成績");
+    if(res==''){
+        document.write("此區域不可為空白");
+    }
+    else if(res<60){
+        document.write("不及格");
+    }
+    else if(res>=60 && res<70){
+        document.write("D");
+    }
+    else if(res>=70 && res<80){
+      document.write("C");
+    }
+    else if(res>80 && res<=90){
+        document.write("B");
+    }
+    else if(res>90 && res<=100){
+        document.write("A");
+    }
+    else{
+        document.write("請輸入100以內的數字");
+    }
+   </script>  
+</body>
+</html>

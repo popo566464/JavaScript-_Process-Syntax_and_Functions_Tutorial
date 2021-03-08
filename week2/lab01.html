@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Week07 - Practice 01</title>               
+  </head>    
+    <body>
+      <p>店員：雞排1份60元，牛奶一瓶30元</p>
+      <p>客人：我要<input type="text" id='chiNumId'>個雞排，和<input type="text" id='milkNumId'>杯牛奶！</p>
+      <p>店員：<button id='countId'>計算答案</button>，一共是<em id='totalId'></em>元。</p>
+      <script>
+        document.getElementById('countId').onclick = function(){
+  //用變數設定雞排跟牛奶的售價
+        var chi = 60;
+        var milk = 30;
+  //選取輸入欄位的 DOM 並宣告變數名，用 value 帶出輸入欄的值。
+        var chiNum = parseInt(document.getElementById('chiNumId').value);
+        var milkNum = parseInt(document.getElementById('milkNumId').value);
+  //再用一個變數儲存金額加總
+        var total = chiNum*chi + milkNum*milk;
+  //把總金額顯示至網頁上
+        document.getElementById('totalId').textContent = total;
+}
+      </script>  
+    </body>
+</html>

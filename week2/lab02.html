@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Week07 - Practice 02</title>               
+  </head>    
+    <body>
+    <p id="demo"></p>
+    <p>請輸入華氏溫度<input type="text" id='fahrenheitId'>度</p>
+    <p><button onclick="toCelsius(f)">轉換成攝氏</button></p>
+    <p>得出的攝氏溫度為<em id='totalId'></em>度。</p>     
+      <script> 
+    var f; 
+    function toCelsius(f) {
+          var f = parseInt(document.getElementById('fahrenheitId').value);
+          var c = (5/9) * (f-32);          
+          document.getElementById('totalId').textContent = c.toFixed(2);                 
+          }          
+      </script>  
+    </body>
+</html>
